@@ -10,7 +10,7 @@ import os
 from datetime import date
 
 views = Blueprint('views', __name__)
-tesla_list_of_files = glob.glob('all_data/*')
+tesla_list_of_files = glob.glob('*/all_data/*')
 tesla_latest = max(tesla_list_of_files, key=os.path.getctime)
 vehicle_pd = pd.read_csv(tesla_latest)
 vehicle_models = ['Model S', 'Model 3', 'Model X', 'Model Y']
