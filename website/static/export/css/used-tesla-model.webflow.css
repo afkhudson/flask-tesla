@@ -321,7 +321,6 @@
 
 .sidebar-container {
   position: -webkit-sticky;
-  position: sticky;
   top: 0px;
   height: 100%;
   max-width: 100%;
@@ -330,6 +329,7 @@
   background-color: #fff;
   -o-object-fit: fill;
   object-fit: fill;
+  overflow: auto;
 }
 
 .button {
